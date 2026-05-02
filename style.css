@@ -1,12 +1,29 @@
 body {
-    background-color: lightblue;
+    background: linear-gradient(to right, #74ebd5, #9face6);    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin:30px auto;
+    padding: 20px;
+    border-radius: 15px;
     text-align: center;
 
+    box-shadow: 0px 5px 20 px rgba(0,0,0,0.2);
 }
 
 h1 {
-    color: darkblue;
+    color: #0d47a1;
+    font-size: 40px;
+}
 
+h2 {
+    color: #1565c0;
+    margin-top: 20px;
+    font-size: 35px;
 }
 
 p {
@@ -15,12 +32,14 @@ p {
 }
 
 img {
-    border-radius: 35px;
+    width: 300px;
+    border-radius: 50%;
     margin-top: 10px;
 }
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 li {
@@ -28,11 +47,34 @@ li {
     margin: 5px;
 }
 
-h2 {
-    color: darkred;
-    margin-top: 20px;
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 120px;
+    }
 }
 
-body {
-    font-family: Arial;
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
